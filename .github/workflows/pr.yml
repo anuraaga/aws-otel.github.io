@@ -33,3 +33,5 @@ jobs:
             ${{ runner.os }}-node-
       - run: npm install
       - run: npm build
+        env:
+          GH_API_KEY: ${{ secrets.GITHUB_TOKEN }}
